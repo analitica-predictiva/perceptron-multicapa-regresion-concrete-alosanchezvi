@@ -19,13 +19,13 @@ def pregunta_01():
     y = df['strength']  
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    X = df.copy()  
+    x = df.copy()  
 
     # Remueva la columna `strength` del DataFrame `X`.
-    X.drop('strength',axis=1,inplace=True)
+    x.drop('strength',axis=1,inplace=True)
 
     # Retorne `X` y `y`
-    return X, y
+    return x, y
 
 
 def pregunta_02():
@@ -47,7 +47,7 @@ def pregunta_02():
         y_train,  
         y_test,  
     ) = train_test_split(  
-        X,  
+        x,  
         y,  
         test_size=0.25,  
         random_state=12453,  
